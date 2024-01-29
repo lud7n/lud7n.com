@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+img {
+    opacity: 1.0;
+}
+
+body {
+    background: url("shiro.jpeg");
+}
+
+.textArea {
+    overflow: hidden;
+    font-family: "Courier New";
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 180px;
+}
+
+.textArea video {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -50%;
+    pointer-events: none;
+    background-color: white;
+    transform: scale(-1, -1);
+    mix-blend-mode: screen;
+    animation: opacity 0.2s both;
+    animation-delay: 5s;
+}
+
+.textArea .text {
+    filter: blur(10px);
+    opacity: 0;
+    animation: blur 5s both;
+}
+
+.is-act .text {
+    animation: blur 5s both;
+}
+
+.is-act .textArea video {
+    mix-blend-mode: screen;
+    animation: opacity 0.2s both;
+    animation-delay: 5s;
+}
+
+@keyframes blur {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes opacity {
+    100% {
+        opacity: 0;
+    }
+}
+
+div {
+    color: #5c3919;
+    text-align: center;
+    font-size: 40px;
+}
+
+.font-main {
+    padding: 2px;
+}
+
+#btn1 {
+    margin-bottom: 4px;
+}
+
+.title {
+    font-family: "Courier New";
+    font-size: 30px;
+    height: 0px;
+    line-height: 700px;
+    letter-spacing: 2px;
+}
+
+
+.shadow_test {
+    filter: drop-shadow(2px 2px 2px rgba(50, 50, 50, 0.8));
+}
+
+.portfolio {
+    text-align: left;
+    position: fixed;
+    padding: 0px 0;
+}
+
+.atcoder {
+    text-align: left;
+    position: fixed;
+    padding: 0px 0;
+}
+
+.instagram {
+    text-align: left;
+    position: fixed;
+    padding: 0px 0;
+}
+
+.twitter {
+    text-align: left;
+    position: fixed;
+    padding: 0px 3px;
+}
+
+.aboutme {
+    font-family: "Courier New";
+    font-size: 15px;
+    padding: 0px;
+}
+
+.hiyoko {
+    position: absolute;
+    top: 100px;
+    left: 80%;
+}
+
+.profile01 {
+    font-family: "ヒラギノ角ゴ ProN W6";
+    font-size: 15px;
+    text-align: center;
+    padding: 300px 0;
+}
+
+.size_text {
+    font-size: 30px;
+}
+
+.size_text3 {
+    text-align: left;
+    font-size: 15px;
+    padding: 0 150px;
+}
+
+.size_text2 {
+    text-align: left;
+    font-size: 12px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+}
+
+.hiragino {
+    font-size: 15px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.slide-container {
+    opacity: 0.7;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide-wrapper {
+    display: flex;
+    animation: slide-flow 40s infinite linear 1s both;
+}
+
+.slide {
+    width: 100px;
+    object-fit: cover;
+    border: 1px;
+}
+
+@keyframes slide-flow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
