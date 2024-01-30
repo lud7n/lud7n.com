@@ -4,10 +4,151 @@ img {
     opacity: 1.0;
 }
 
+
+div {
+    color: #5c3919;
+    text-align: center;
+}
+
 body {
     background: url("shiro.jpeg");
 }
 
+
+.font-main {
+    padding: 2px;
+}
+
+#btn1 {
+    margin-bottom: 4px;
+}
+
+.title {
+    font-family: "Courier New";
+    font-size: 30px;
+    line-height: 700px;
+    letter-spacing: 2px;
+}
+
+
+.shadow_test {
+    filter: drop-shadow(2px 2px 2px rgba(50, 50, 50, 0.8));
+}
+
+.portfolio {
+    text-align: left;
+    position: fixed;
+    padding: 0px 0;
+}
+
+.atcoder {
+    text-align: left;
+    position: fixed;
+    padding: 0px 0;
+}
+
+.instagram {
+    text-align: left;
+    position: fixed;
+    padding: 0px 0;
+}
+
+.twitter {
+    text-align: left;
+    position: fixed;
+    padding: 0px 3px;
+}
+
+.aboutme {
+    font-family: "Courier New";
+    font-size: 15px;
+}
+
+.profile01 {
+    font-family: "ヒラギノ角ゴ ProN W6";
+    font-size: 15px;
+    text-align: center;
+    padding-top: 300px;
+    line-height: 2;
+}
+
+.h1 {
+    font-family: "ヒラギノ角ゴ ProN W6";
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.size_text {
+    font-size: 30px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+}
+
+.size_text3 {
+    text-align: center;
+    font-size: 15px;
+    padding: 0 150px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+}
+
+.size_text2 {
+    text-align: left;
+    font-size: 12px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.slide-container {
+    opacity: 0.7;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide-wrapper {
+    display: flex;
+    animation: slide-flow 40s infinite linear 1s both;
+}
+
+.slide {
+    width: 100px;
+    object-fit: cover;
+    border: 1px;
+}
+
+@keyframes slide-flow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.blog {
+    text-align: center;
+    font-size: 30px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+}
+
+.blog_body {
+    text-align: center;
+    font-size: 15px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+}
+
+/*タイトルの浮上アニメーション*/
 .textArea {
     overflow: hidden;
     font-family: "Courier New";
@@ -64,131 +205,140 @@ body {
     }
 }
 
-div {
-    color: #5c3919;
+/*記事の遷移アニメーション*/
+
+.ly_section {
+    padding: 100px 0;
+    font-size: 15px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+}
+
+.ly_section_inner {
+    max-width: 1030px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.el_lv2Heading {
+    font-size: 15px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+    font-size: 3rem;
     text-align: center;
-    font-size: 40px;
+    margin-bottom: 70px;
 }
 
-.font-main {
-    padding: 2px;
-}
-
-#btn1 {
-    margin-bottom: 4px;
-}
-
-.title {
-    font-family: "Courier New";
-    font-size: 30px;
-    height: 0px;
-    line-height: 700px;
-    letter-spacing: 2px;
-}
-
-
-.shadow_test {
-    filter: drop-shadow(2px 2px 2px rgba(50, 50, 50, 0.8));
-}
-
-.portfolio {
-    text-align: left;
-    position: fixed;
-    padding: 0px 0;
-}
-
-.atcoder {
-    text-align: left;
-    position: fixed;
-    padding: 0px 0;
-}
-
-.instagram {
-    text-align: left;
-    position: fixed;
-    padding: 0px 0;
-}
-
-.twitter {
-    text-align: left;
-    position: fixed;
-    padding: 0px 3px;
-}
-
-.aboutme {
-    font-family: "Courier New";
-    font-size: 15px;
-    padding: 0px;
-}
-
-.hiyoko {
-    position: absolute;
-    top: 100px;
-    left: 80%;
-}
-
-.profile01 {
-    font-family: "ヒラギノ角ゴ ProN W6";
-    font-size: 15px;
-    text-align: center;
-    padding: 300px 0;
-}
-
-.size_text {
-    font-size: 30px;
-}
-
-.size_text3 {
-    text-align: left;
-    font-size: 15px;
-    padding: 0 150px;
-}
-
-.size_text2 {
-    text-align: left;
-    font-size: 12px;
-    font-family: "ヒラギノ角ゴ ProN W6";
-}
-
-.hiragino {
+/*ここから3カラム記事エリアのスタイリング*/
+.card_items {
     font-size: 15px;
     font-family: "ヒラギノ角ゴ ProN W6";
-}
-
-ul {
-    list-style-type: none;
-}
-
-ol {
-    list-style-type: none;
-}
-
-.slide-container {
-    opacity: 0.7;
-    width: 100%;
-    margin: 50px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card_items>li {
+    width: 31%;
+    margin-right: 3.5%;
+    margin-bottom: 35px;
+}
+
+.card_items>li:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.card_item {
+    position: relative;
+    display: block;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*画像エリアのスタイリング*/
+.card_item:hover .card_item_imgWrapper::before {
+    opacity: 1;
+}
+
+.card_item:hover .card_item_imgWrapper::after {
+    content: "Read More";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    opacity: 1;
+}
+
+.card_item_imgWrapper {
+    position: relative;
+    padding-top: 50%;
     overflow: hidden;
 }
 
-.slide-wrapper {
-    display: flex;
-    animation: slide-flow 40s infinite linear 1s both;
+.card_item_imgWrapper::before,
+.card_item_imgWrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
 }
 
-.slide {
-    width: 100px;
+.card_item_imgWrapper>img {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -o-object-fit: cover;
     object-fit: cover;
-    border: 1px;
 }
 
-@keyframes slide-flow {
-    0% {
-        transform: translateX(0);
-    }
+/*日時、タイトル、抜粋文テキスト部分のスタイリング*/
+.card_item_body {
+    height: 160px;
+    padding: 15px;
+}
 
-    100% {
-        transform: translateX(-100%);
-    }
+.card_item_body>.card_item_time {
+    font-size: 15px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card_item_body>.card_item_ttl {
+    color: #333;
+    font-size: 15px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card_item_body>.card_item_txt {
+    color: #777;
+    font-size: 15px;
+    font-family: "ヒラギノ角ゴ ProN W6";
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
